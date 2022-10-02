@@ -6,6 +6,21 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+## To Run on Local Command
+There are two ways this can be handled:
+
+Temporary Front-End solution so you can test if your API integration is working:
+Click on window -> type run and hit enter -> in the command window copy:
+
+`chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security`
+
+This will open a new "Chrome" window where you can work easily. This is a temporary solution. Every time you will have to work with this chrome window.
+
+Permanent solution:
+In the backend code, the developer needs to add an annotation @Crossorigin right above the CRUD api call method.
+
+Let me know if it works
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
